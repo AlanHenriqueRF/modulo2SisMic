@@ -71,6 +71,24 @@
                 "name": "m1ex04.c",
                 "resourceId": "/m1ex04.c"
             }
+        },
+        {
+            "name": "m1ex05.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex05.c",
+                "resourceId": "/m1ex05.c"
+            }
+        },
+        {
+            "name": "m1ex06.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m1ex06.c",
+                "resourceId": "/m1ex06.c"
+            }
         }
     ]
 }

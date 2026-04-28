@@ -1,20 +1,32 @@
 #include <msp430.h>
 
-// Exercício 3: Remoção de rebotes
-// Refaça o exercício 2 removendo os rebotes das chaves. Para isso, defina uma
-// função debounce() que consome tempo do processador através de um loop que
-// decremente uma variável. Não deixe de declará-la como volatile para evitar
-// que o recurso de otimização do compilador a remova.
+// Exercício 6: Amostrando flags do timer
+// Escreva um programa em C que faça piscar o LED verde (P4.7) em exatamente 1Hz
+// (0,5s apagado e 0,5s aceso). Use a técnica de amostragem (polling) da flag de
+// overflow (TAIFG) ou a flag do canal 0 (CCIFG) para saber quando o timer
+// atingiu o valor máximo.
+
+#define led_verde (P4OUT |= BIT7)
+#define non_led_verde (P4OUT &= ~BIT7)
+
+#define UM_SEG 32767 // CCR0 = 32768 - 1
 
 void debounce(int a);
 
 int main(void) {
   WDTCTL = WDTPW | WDTHOLD; // interrompe whatdogs
 
-}
+  P4DIR |= BIT7; // LED VERDE CONFIGURADO
 
-void debounce(int a) {
-  volatile int i;
-  for (i = 0; i < a; i++)
-    ;
+  TA0CCR0 = UM_SEG/2;
+  TA0CTL = TASSEL_1 // TIPO DE CLOCK, NO CASO O ACLK
+           | ID_0   // DIVISOR 1, SEM DIVISOR, ACHO QUE AQUI, TALVEZ PODEMOS
+           | MC_1   // MODO UP, 0->1->3->...->32767
+           | TACLR; // LIMPA O CONTADOR
+
+  while (1) {
+    while (!(TA0CTL & TAIFG));
+    TA0CTL &= ~TAIFG;
+    P4OUT ^= BIT7;
+  }
 }
