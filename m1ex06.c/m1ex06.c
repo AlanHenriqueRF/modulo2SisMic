@@ -11,8 +11,6 @@
 
 #define UM_SEG 32767 // CCR0 = 32768 - 1
 
-void debounce(int a);
-
 int main(void) {
   WDTCTL = WDTPW | WDTHOLD; // interrompe whatdogs
 
@@ -20,7 +18,6 @@ int main(void) {
 
   TA0CCR0 = UM_SEG/2;
   TA0CTL = TASSEL_1 // TIPO DE CLOCK, NO CASO O ACLK
-           | ID_0   // DIVISOR 1, SEM DIVISOR, ACHO QUE AQUI, TALVEZ PODEMOS
            | MC_1   // MODO UP, 0->1->3->...->32767
            | TACLR; // LIMPA O CONTADOR
 
