@@ -9,21 +9,21 @@ CMD_SRCS += \
 ../lnk_msp430f5529.cmd 
 
 C_SRCS += \
-../m2ex08.c 
+../m2ex09.c 
 
 C_DEPS += \
-./m2ex08.d 
+./m2ex09.d 
 
 OBJS += \
-./m2ex08.obj 
+./m2ex09.obj 
 
 OBJS__QUOTED += \
-"m2ex08.obj" 
+"m2ex09.obj" 
 
 C_DEPS__QUOTED += \
-"m2ex08.d" 
+"m2ex09.d" 
 
 C_SRCS__QUOTED += \
-"../m2ex08.c" 
+"../m2ex09.c" 
 
 

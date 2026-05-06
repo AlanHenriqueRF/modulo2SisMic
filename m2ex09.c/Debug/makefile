@@ -10,7 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./m2ex08.obj" \
+"./m2ex09.obj" \
 "../lnk_msp430f5529.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibmath.a \
@@ -135,8 +135,8 @@ m2ex09.c.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "m2ex08.obj" 
-	-$(RM) "m2ex08.d" 
+	-$(RM) "m2ex09.obj" 
+	-$(RM) "m2ex09.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents

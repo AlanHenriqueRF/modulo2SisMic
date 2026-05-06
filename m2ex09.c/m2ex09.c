@@ -10,5 +10,18 @@
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;
 
+    P1DIR |= BIT0;
+    P1OUT &= ~BIT0;
+
+    TA0CTL = TASSEL__ACLK | MC__UP;
+
+    P1DIR |= BIT5;
+    P1SEL |= BIT5; // CONFIGURA O CABO CONECTADO NO P1.5, A USAR O TA0.4
+
+    TA0CCR0 = 255; 
+    TA0CCR4 = TA0CCR0 >> 1; // 50%
+
+    TA0CCTL4 = OUTMOD_7; // RESET/SET // ERROUUUUUU TA0CCTL
+
     while(1) {}
 }

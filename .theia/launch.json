@@ -116,6 +116,15 @@
                 "name": "m2ex08.c",
                 "resourceId": "/m2ex08.c"
             }
+        },
+        {
+            "name": "m2ex09.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "m2ex09.c",
+                "resourceId": "/m2ex09.c"
+            }
         }
     ]
 }
