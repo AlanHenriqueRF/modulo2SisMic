@@ -10,7 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./m1ex10.obj" \
+"./m1ex08.obj" \
 "../lnk_msp430f5529.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibmath.a \
@@ -115,28 +115,28 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-m1ex10.c.out 
+m1ex08.c.out 
 
 EXE_OUTPUTS__QUOTED += \
-"m1ex10.c.out" 
+"m1ex08.c.out" 
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "m1ex10.c.out"
+	@$(MAKE) --no-print-directory -Onone "m1ex08.c.out"
 
 # Tool invocations
-m1ex10.c.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+m1ex08.c.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'MSP430 Linker - building target: "$@"'
-	"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"m1ex10.c.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs2050/ccs/ccs_base/msp430/include" -i"C:/ti/ccs2050/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="m1ex10.c_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "m1ex10.c.out" $(ORDERED_OBJS)
+	"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"m1ex08.c.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs2050/ccs/ccs_base/msp430/include" -i"C:/ti/ccs2050/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs2050/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="m1ex08.c_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "m1ex08.c.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "m1ex10.obj" 
-	-$(RM) "m1ex10.d" 
+	-$(RM) "m1ex08.obj" 
+	-$(RM) "m1ex08.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents
