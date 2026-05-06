@@ -24,12 +24,12 @@
             ]
         },
         {
-            "name": "m1ex01.c",
+            "name": "m2ex01.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex01.c",
-                "resourceId": "/m1ex01.c"
+                "name": "m2ex01.c",
+                "resourceId": "/m2ex01.c"
             },
             "connections": [
                 {
@@ -46,75 +46,75 @@
             ]
         },
         {
-            "name": "m1ex02.c",
+            "name": "m2ex02.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex02.c",
-                "resourceId": "/m1ex02.c"
+                "name": "m2ex02.c",
+                "resourceId": "/m2ex02.c"
             }
         },
         {
-            "name": "m1ex03.c",
+            "name": "m2ex03.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex03.c",
-                "resourceId": "/m1ex03.c"
+                "name": "m2ex03.c",
+                "resourceId": "/m2ex03.c"
             }
         },
         {
-            "name": "m1ex04.c",
+            "name": "m2ex04.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex04.c",
-                "resourceId": "/m1ex04.c"
+                "name": "m2ex04.c",
+                "resourceId": "/m2ex04.c"
             }
         },
         {
-            "name": "m1ex05.c",
+            "name": "m2ex05.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex05.c",
-                "resourceId": "/m1ex05.c"
+                "name": "m2ex05.c",
+                "resourceId": "/m2ex05.c"
             }
         },
         {
-            "name": "m1ex06.c",
+            "name": "m2ex06.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex06.c",
-                "resourceId": "/m1ex06.c"
+                "name": "m2ex06.c",
+                "resourceId": "/m2ex06.c"
             }
         },
         {
-            "name": "m1ex07.c",
+            "name": "m2ex07.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex07.c",
-                "resourceId": "/m1ex07.c"
+                "name": "m2ex07.c",
+                "resourceId": "/m2ex07.c"
             }
         },
         {
-            "name": "m1ex10.c",
+            "name": "m2ex10.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex10.c",
-                "resourceId": "/m1ex10.c"
+                "name": "m2ex10.c",
+                "resourceId": "/m2ex10.c"
             }
         },
         {
-            "name": "m1ex08.c",
+            "name": "m2ex08.c",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "m1ex08.c",
-                "resourceId": "/m1ex08.c"
+                "name": "m2ex08.c",
+                "resourceId": "/m2ex08.c"
             }
         }
     ]
